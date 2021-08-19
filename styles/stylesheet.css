@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../media/Background Image.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 5vh;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 3.5vh;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
