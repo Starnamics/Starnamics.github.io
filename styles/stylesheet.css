@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,35 +7,114 @@
 }
 
 body {
-    background-image: url("../media/Background Image.jpg");
-    background-size: auto;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(209,116,255);
+    background: linear-gradient(45deg, rgba(209,116,255,1) 0%, rgba(87,197,255,1) 100%);
     background-repeat: no-repeat;
-    background-attachment:local;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 50px;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
     color: white;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.main-container {
+    position: absolute;
+    top: 0;
+    left: 18em;
+    padding: 32px;
+    height: max-content;
+    margin-right: 32px;
+}
+
+.nav {
+    width: 18em;
+    height: 100%;
+    padding: 32px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(25px);
     text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
     flex-direction: column;
+    position: fixed;
 }
 
-h1 {
-    font-size: 5vh;
+.nav h1 {
+    font-size: 1.8em;
 }
 
-h2 {
+.nav h3 {
+    font-size: 1.35em;
     font-weight: normal;
-    font-size: 3.5vh;
-    margin-top: 0.5vh;
-    margin-bottom: 0.5vh;
+    cursor: pointer;
+    margin: 1em;
+}
+
+.code {
+    font-size: 120px;
+}
+
+.socials-container {
+    margin: 24px;
+}
+
+.socials {
+    margin: 12px;
+    font-size: 2em;
 }
 
 a {
     outline: none;
     text-decoration: none;
     color: inherit;
+}
+
+.projects-container {
+    display: inline-grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-auto-flow: row;
+    grid-area: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.project-card {
+    display: flex;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(25px);
+    padding: 16px;
+    height: fit-content;
+    width: 30em;
+    border-radius: 16px 16px 42px 16px;
+    transition: transform 0.1s linear;
+    cursor: pointer;
+}
+
+.project-card:hover { 
+    transform: scale(1.025) rotate(2deg);
+}
+
+.pc-icon {
+    width: 6em;
+    height: 6em;
+    border-radius: 16px;
+}
+.pc-text {
+    padding-left: 16px;
+}
+
+.pc-desc {
+    padding-right: 12px;
+}
+
+.about {
+    padding-right: 42%;
+}
+
+.review {
+    padding-right: 42%;
 }
