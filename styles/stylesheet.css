@@ -16,6 +16,7 @@ body {
     background-size: cover;
     font-family: 'Rubik', sans-serif;
     color: white;
+    overflow-x: hidden;
 }
 
 .main-container {
@@ -112,9 +113,13 @@ a {
 }
 
 .about {
-    padding-right: 30%;
+    max-width: 45%;
+    overflow-wrap: normal;
+    overflow: hidden;
 }
 
 .review {
-    padding-right: 30%;
+    max-width: 45%;
+    overflow-wrap: break-word;
+    overflow: hidden;
 }
