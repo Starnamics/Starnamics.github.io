@@ -31,6 +31,7 @@ body {
   margin-right: 32px;
 }
 
+
 .nav {
   width: 18em;
   height: 100%;
@@ -142,4 +143,17 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background: rgb(62,62,62);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgb(22,22,22);
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    visibility: hidden;
+  }
+  .main-container {
+    left: 0;
+  }
 }
