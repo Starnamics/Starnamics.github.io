@@ -8,7 +8,7 @@
 
 body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: rgb(209, 116, 255);
   background: linear-gradient(
     45deg,
@@ -20,7 +20,6 @@ body {
   background-size: cover;
   font-family: "Rubik", sans-serif;
   color: white;
-  overflow-x: hidden;
 }
 
 .main-container {
@@ -44,6 +43,7 @@ body {
   align-items: center;
   flex-direction: column;
   position: fixed;
+  z-index: 2;
 }
 
 .nav h1 {
@@ -79,12 +79,13 @@ a {
 .projects-container {
   display: inline-grid;
   grid-gap: 50px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 50px;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30%;
   grid-auto-flow: row;
   grid-area: auto;
   margin-top: 12px;
-  margin-bottom: 12px;
+  margin-bottom: -10vh;
 }
 
 .project-card {
@@ -92,8 +93,9 @@ a {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(25px);
   padding: 16px;
-  height: fit-content;
-  width: 30em;
+  padding-bottom: 20%;
+  height: 100%;
+  width: 100%;
   border-radius: 16px 16px 42px 16px;
   transition: transform 0.1s linear;
   cursor: pointer;
@@ -110,6 +112,7 @@ a {
 }
 .pc-text {
   padding-left: 16px;
+  font-size: 90%;
 }
 
 .pc-desc {
@@ -126,4 +129,17 @@ a {
   max-width: 45%;
   overflow-wrap: break-word;
   overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(22,22,22);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(62,62,62);
 }
